@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo 'remove test directory'
+rm -rf test/
+
+echo 'building test source'
+node_modules/.bin/babel \
+  src/test \
+  --out-dir test/ \
+  --experimental \
+  --source-maps \
+;
+
+node_modules/.bin/tap ./test
