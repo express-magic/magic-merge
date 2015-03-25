@@ -2,7 +2,7 @@
 
 echo 'babelify package'
 node_modules/.bin/babel \
-  src/index.js \
+  src/merge.js \
   --out-file index.js \
   --experimental \
   --source-maps \

@@ -1,5 +1,5 @@
-import is from 'is';
 import {each} from 'magic-loops';
+import is from 'is';
 
 /*
 * Recursively merge properties of two objects 
