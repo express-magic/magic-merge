@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var is = _interopRequire(require("is"));
-
 var each = require("magic-loops").each;
+
+var is = _interopRequire(require("is"));
 
 function merge(obj1, obj2) {
   if (is.array(obj1) && is.array(obj2)) {
