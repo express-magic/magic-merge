@@ -1,0 +1,21 @@
+{
+  "name": "magic-merge",
+  "version": "0.0.1",
+  "description": "merges javascript objects and arrays",
+  "author": "Jascha Ehrenreich <jascha@jaeh.at>",
+  "license": "AGPL",
+  "main": "index.js",
+  "scripts": {
+    "clean": "bin/clean",
+    "prepub": "bin/build",
+    "test": "bin/build && bin/test"
+  },
+  "dependencies": {
+    "is": "^3.0.1",
+    "magic-loops": "git://github.com/express-magic/magic-loops"
+  },
+  "devDependencies": {
+    "babel": "^4.7.16",
+    "tap": "^0.7.1"
+  }
+}
