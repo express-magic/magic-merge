@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "is": "^3.0.1",
-    "magic-loops": "git://github.com/express-magic/magic-loops"
+    "magic-loops": "git+https://github.com/express-magic/magic-loops"
   },
   "devDependencies": {
     "babel": "^4.7.16",
