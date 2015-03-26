@@ -17,5 +17,13 @@
   "devDependencies": {
     "babel": "^4.7.16",
     "tap": "^0.7.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/express-magic/magic-merge"
+  },
+  "bugs": {
+    "url": "https://github.com/express-magic/magic-merge/issues"
+  },
+  "homepage": "https://github.com/express-magic/magic-merge"
 }
