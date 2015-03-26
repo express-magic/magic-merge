@@ -8,7 +8,7 @@ node_modules/.bin/babel \
   src/test \
   --out-dir test/ \
   --experimental \
-  --source-maps \
+  --source-maps-inline \
 ;
 
 node_modules/.bin/tap ./test
