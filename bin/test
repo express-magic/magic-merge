@@ -1,14 +1,18 @@
 #!/bin/bash
 
-echo 'remove test directory'
-rm -rf test/
+echo 'remove and readd test directory'
+rm -rf test/*
+mkdir test/ -p
 
 echo 'building test source'
 node_modules/.bin/babel \
-  src/test \
+  src/test/ \
   --out-dir test/ \
   --experimental \
-  --source-maps-inline \
 ;
 
-node_modules/.bin/tap ./test
+./node_modules/.bin/mocha \
+  ./test/index.js \
+  --reporter spec \
+  --ui bdd \
+;

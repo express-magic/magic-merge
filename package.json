@@ -10,13 +10,10 @@
     "prepub": "bin/build",
     "test": "bin/build && bin/test"
   },
-  "dependencies": {
-    "is": "^3.0.1",
-    "magic-loops": "git+https://github.com/express-magic/magic-loops"
-  },
   "devDependencies": {
     "babel": "^4.7.16",
-    "tap": "^0.7.1"
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1"
   },
   "repository": {
     "type": "git",
