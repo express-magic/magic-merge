@@ -56,7 +56,6 @@ describe('merge arrays and objects', () => {
   
   describe('#merge(array, object)', () => {
     var merged = merge(arr1, obj2);
-    console.log(merged);
     it('should return an array', () => {
       merged.should.be.a('array');
     });
@@ -80,4 +79,27 @@ describe('merge arrays and objects', () => {
       merged.outer.should.deep.equal(obj2.outer);
     });
   });
+
+  describe('#merge(object, undefined)', () => {
+    var merged = merge(obj1);
+    it('should return an unchanged object', () => {
+      merged.should.be.deep.equal(obj1);
+    });
+  });
+
+
+  describe('#merge(undefined, undefined)', () => {
+    var merged = merge();
+    it('should return undefined', () => {
+      (typeof merged === 'undefined').should.be.true;
+    });
+  });
+
+  describe('#merge(undefined, undefined)', () => {
+    var merged = merge();
+    it('should return undefined', () => {
+      (typeof merged === 'undefined').should.be.true;
+    });
+  });
+  
 });
